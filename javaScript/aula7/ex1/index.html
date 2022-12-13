@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <title>Cadastro de pessoa</title>
+</head>
+<body style="margin: 20px;">
+    <div class="field">
+        <label class="label">Nome</label>
+        <div class="control">
+          <input class="input" id="nome" type="text" placeholder="Digite seu nome">
+        </div>
+    </div>
+      
+    <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+            <input id="email" class="input" type="email" placeholder="Digite seu email" value="xxx@xxx">
+        </div>
+    </div>
+      
+    <div class="field is-grouped">
+        <div class="control">
+            <button class="button is-link" onclick="criarCadastro()">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        const criarCadastro = async () => {
+            // var input = document.querySelector("#nome");
+            var inputNome = document.getElementById("nome").value;
+            var inputEmail = document.getElementById("email").value;
+
+            console.log(inputNome);
+
+            fetch('http://localhost:3000/pessoa', {
+                method: 'POST',
+                body: JSON.stringify({
+                    nome: inputNome,
+                    email: inputEmail
+            }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+            .then((response) => myJson = response.json())
+        }
+
+        // const testeDelete = async () => {
+        //         const response = await fetch('http://localhost:3000/pessoa/5', {
+        //             method: 'DELETE',
+        //         });
+
+        //         const myJson1 = await response.json();
+
+        //         console.log(response);
+        //         console.log(myJson); 
+        // }
+        // testeDelete()
+    </script>
+</body>
+</html>

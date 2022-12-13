@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Varrer Lista</title>
+</head>
+<body>
+    <script>
+        function extrair() {
+            var lista = ['Adidas Breaknet', 'All Star', 'Adidas Superstar', 'Adidas Stan Smith', 'Air Force'];
+            var listaAdidas = [];
+
+            for (var i = 0; i < lista.length; i++) {
+                // console.log(lista[i]);
+                var tenis = lista[i]
+
+                console.log(tenis.indexOf("Adidas"));
+
+                if(tenis.indexOf("Adidas") === 0) {
+                    listaAdidas.push(tenis);
+                }
+            }
+
+            console.log(listaAdidas);
+        }
+        
+        extrair();
+    </script>
+</body>
+</html>

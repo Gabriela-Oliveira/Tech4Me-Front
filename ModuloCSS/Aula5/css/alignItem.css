@@ -1,0 +1,15 @@
+#main {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black;
+
+    display: flex;
+
+}
+
+#main div {
+    display: flex;
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+}

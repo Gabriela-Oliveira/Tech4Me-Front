@@ -1,0 +1,25 @@
+#main {
+    display: flex;
+}
+
+#main div {
+    width: 33%;
+    height: 100%;
+    border: 1px solid;
+}
+
+h3 {
+    text-align: center;
+}
+
+.furadinho p {
+    text-align: right;
+}
+
+.chocolate p {
+    text-align: center;
+}
+
+.caramelo p {
+    text-align: left;
+}

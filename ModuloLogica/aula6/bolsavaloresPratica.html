@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa de Valores</title>
+</head>
+<body>
+    <script>
+        function bolsadeValores(codigo, valor, qtde) {
+            var valorIndidual = valor * qtde
+
+            return valorIndidual;
+        }
+
+        var totalInvestimento1 = bolsadeValores(1, 10, 1);
+        var totalInvestimento2 = bolsadeValores(2, 20, 2);
+        var totalInvestimento3 = bolsadeValores(3, 30, 3);
+
+        // var totalFinal = totalInvestimento1 + totalInvestimento2 + totalInvestimento3;
+
+        // alert(totalFinal);
+
+        alert(totalInvestimento1 + totalInvestimento2 + totalInvestimento3);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Revisão 1</title>
+</head>
+<body>
+
+    <!--
+        1º Pegar notas e quantidade da mesma digitadas pelo usuário 
+        2º Somar as notas 
+        3º Fazer a média 
+        4º Imprimir na tela as notas digitadas + a soma + a média 
+    -->
+
+    <script>
+        var qtdNota = prompt("Quantas notas desejas add para saber a média?");
+        var somaNotas = 0;
+        var mediaNota = 0;
+
+        for(var i = 0; i < qtdNota; i++) {
+            var nota = parseFloat(prompt("Digite um nota: "));
+
+            somaNotas = somaNotas + nota;
+            console.log(somaNotas);
+        }   
+
+        mediaNota = somaNotas / qtdNota;
+        console.log(mediaNota);
+
+        alert("Soma: " + somaNotas + " Média: " + mediaNota);
+
+    </script>
+</body>
+</html>

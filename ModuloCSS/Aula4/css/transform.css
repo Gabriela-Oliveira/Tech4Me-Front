@@ -1,0 +1,22 @@
+div.a {
+    width: 150px;
+    height: 80px;
+    background-color: yellowgreen;
+    transform: rotate(20deg);
+}
+
+div.b {
+    width: 150px;
+    height: 80px;
+    background-color: yellowgreen;
+    transform: skewY(20deg);
+}
+
+div.c {
+    width: 150px;
+    height: 80px;
+    background-color: yellowgreen;
+    transform: scaleY(1.5);
+    transform: scaleX(1.5);
+    margin: 20px;
+}

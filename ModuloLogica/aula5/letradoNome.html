@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento da Entrevista</title>
+</head>
+<body>
+    <button onclick="nome()">Dia da entrevista!</button>
+
+    <script>
+        function nome() {
+            var nome = "Samuel"
+            var primeiraLetraNome = nome.substring(0, 1).toLowerCase()
+
+            console.log(primeiraLetraNome);
+
+            if(primeiraLetraNome === "a" || primeiraLetraNome === "e" || primeiraLetraNome === "i" || primeiraLetraNome === "o" || primeiraLetraNome === "u"){
+                alert("Sua entrevista está agendada para Segunda-Feira")
+            } else {
+                alert("Sua entrevista está agendada para Terça-Feira")
+            }
+        }
+    </script>
+</body>
+</html>

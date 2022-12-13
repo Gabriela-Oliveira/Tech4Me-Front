@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>String Literal</title>
+</head>
+<body>
+    <script>
+        const texto = `posso escrever 
+        um texto com
+quebra de linha no editor`;
+
+        console.log(texto);
+
+///////////////////////////////////////////////////////////////
+
+        const texto1 = `Soma: ${2 + 2}`;
+
+        console.log(texto1);
+
+//////////////////////////////////////////////////////////////
+
+        const nome = "Maria";
+        const dizer = `Te amo ${nome}!`;
+
+        console.log(dizer);
+
+/////////////////////////////////////////////////////////////
+
+        const hora = 20;
+        const texto3 = `Tenha uma boa ${(() => {
+            if (hora > 18) return "noite";
+            return "tarde";
+        })()}`;
+
+        console.log(texto3);
+
+    </script>
+</body>
+</html>

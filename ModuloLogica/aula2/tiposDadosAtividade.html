@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Dados</title>
+
+    <style>
+        div {
+            display: grid;
+        }
+        th, td {
+            font-size: 24px;
+            border: 1px solid black;
+            width: 50%;
+            height: 50px;
+            margin-bottom: auto;
+        }
+        td {
+            font-size: 22px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        button {
+            font-size: 16px;
+            width: 150px;
+            height: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 1px solid rgb(182, 178, 178);
+            background-color: white;
+        }
+        button:hover {
+            border: 1px solid rgb(105, 104, 104);
+        }  
+    </style>
+
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Perguntas</th>
+                <th>Respostas</th>
+            </tr>
+            <tr>
+                <td>Qual é o seu nome?</td>
+                <td><button onclick="resposta1()">Resposta</button></td>
+            </tr>
+            <tr>
+                <td>Qual a sua idade?</td>
+                <td><button onclick="resposta2()">Resposta</button></td>
+            </tr>
+            <tr>
+                <td>Você tem irmãos?</td>
+                <td><button onclick="resposta3()">Resposta</button></td>
+            </tr>
+            <tr>
+                <td>Quanto foi o desconto?</td>
+                <td><button onclick="resposta4()">Resposta</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function resposta2() {
+            alert("Tipo: number (inteiro) -- Operações: Sim")
+        }
+        function resposta3() {
+            alert("Tipo: boolean (true/false) -- Operações: Não")
+        }
+        function resposta1() {
+            alert("Tipo: string (texto) -- Operações: Não")
+        }
+        function resposta4() {
+            alert("Tipo: number (real/float) -- Operações: Sim")
+        }
+    </script>
+</body>
+</html>

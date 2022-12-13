@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myFunction3()">
+    <button onclick="onClick()">Click me 1</button>
+
+    <button id="click1">Click me 2</button>
+
+    <p id="click"></p>
+
+    <!-- ********************************************************************************* -->
+
+    <h1 id="demo" onmouseover="mouseCima()" onmouseout="mouseFora()">Passe o mouse</h1>
+    
+    <!-- ********************************************************************************* -->
+    
+    <form onsubmit="myFunction1()">
+        Digite seu nome: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- ********************************************************************************* -->
+    
+    Digite seu nome: <input type="text" id="fname" onfocus="myFunction2()">
+    
+    <!-- ********************************************************************************* -->
+    </br>
+    </br>
+
+    <div>
+        <select id="mySelect" onchange="myFunction4()">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Volvo">Volvo</option>
+        </select>
+    
+        <p id="demo1"></p>
+    
+    </div>
+    
+    <!-- ********************************************************************************* -->
+
+    <script>
+
+    function onClick() {
+        document.getElementById("click").innerHTML = "Hello World";
+    }
+
+    const botao = document.getElementById("click1");
+    botao.onclick = () => document.getElementById("click").innerHTML = "Hello World";
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    function mouseCima() {
+        document.getElementById("demo").style.color = "red";
+    }
+    
+    function mouseFora() {
+        document.getElementById("demo").style.color = "black";
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    function myFunction1() {
+        alert("O formulário foi enviado");
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    function myFunction2() {
+        document.getElementById("fname").style.backgroundColor = "red";
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    function myFunction3() {
+        alert("A PAGINA ESTÁ CARREGAMDO");
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function myFunction4() {
+        var x = document.getElementById("mySelect").value;
+        document.getElementById("demo1").innerHTML = "Você selecionou: " + x;
+    }
+    </script>
+</body>
+</html>

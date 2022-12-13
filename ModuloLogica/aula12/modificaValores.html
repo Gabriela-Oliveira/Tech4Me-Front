@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modifica Valores</title>
+</head>
+<body>
+    <script>
+        function alteraValores() {
+            const fusca = { motor: 1.6, cor: "verde" };
+            console.log(fusca.cor);
+
+            const carro = fusca;
+
+            carro.cor = "azul";
+
+            console.log(fusca.cor);
+            console.log(carro.cor);
+        }
+
+        alteraValores();
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Juntos</title>
+</head>
+<body>
+
+    <button onclick="fruta()">Fruta</button>
+    <button onclick="fruta1()">Fruta 1</button>
+    <button onclick="fruta2()">Fruta 2</button>
+
+    <script>
+        function fruta() {
+            const fruta = "🥝";
+            switch (fruta) {
+                case "🍍": alert("Faça um chá com a casca.");
+                break;
+                case "🥝": alert("Faça uma caipivodka.");
+                break;
+            }
+        }
+
+        function fruta1() {
+            const fruta = "🥝";
+            switch (fruta) {
+                case "🍍": alert("Faça um chá com a casca.");
+                break;
+                
+                default: alert("Sem informações sobre a fruta.");
+            }
+        }
+
+        // 🍌
+
+        function fruta2() {
+            const numero = "🍉";
+            switch (fruta) {
+            case "🍍": alert("Faça um chá com a casca.");
+                break;
+            case "🍉":
+            case "🍊":
+                alert("Melancia e laranja são frutas do verão.");
+                break;
+            default: alert("Sem informações sobre a fruta.");
+            }
+
+        }
+
+        fruta();
+    </script>
+</body>
+</html>

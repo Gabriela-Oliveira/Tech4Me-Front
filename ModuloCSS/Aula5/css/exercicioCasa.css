@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgray;
+}
+
+.main {
+  width: 54%;
+  height: 550px;
+  margin: 100px auto;
+  display: flex;
+  justify-items: center;
+  background-color: white;
+  border-bottom: solid 4px darkslategray;
+}
+
+.container {
+    position: absolute;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    top: 75%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: #e65c00;
+    background: -webkit-radial-gradient(center ellipse, #e65c00 0%, #803300 100%);
+    background: radial-gradient(ellipse at center, #e65c00 0%, #803300 100%);
+    box-sizing: border-box;
+    box-shadow: 10px 20px 25px 10px rgba(0, 0, 0, 0.2);
+    /* animation-name: quicar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; */
+
+    animation: quicar 4s ease infinite;
+}
+
+.container:before, .container:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: solid 5px #0d0d0d;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+.item-0 {
+  width: 10px;
+  height: 400px;
+  margin-top: auto;
+  margin-left: 105px;
+  background-color: #0d0d0d;
+}
+
+img {
+  width: 187px;
+  position: absolute;
+  height: 169px;
+  margin-top: 44px;
+  margin-left: 10px;
+}
+
+.item-01 {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-right: solid 5px #0d0d0d;
+    box-sizing: border-box;
+    right:50%;
+}
+
+.item-02 {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-top: solid 5px #0d0d0d;
+    box-sizing: border-box;
+    top:50%;
+  }
+
+.container:before {
+    right: 70%;
+}
+.container:after {
+    left: 70%;
+}
+
+
+@keyframes quicar {
+  40% { transform: rotate(20deg) translate(-420%, -300%) rotate(360deg); }
+  50% { transform: rotate(0deg) translate(-300%, 0%) rotate(360deg); }
+
+
+
+    /* 0% { transform: scale(1,1) translateY(0) rotate(360deg)}
+  5% { transform: scale(1.1,0.9) translateY(0) rotate(360deg)} 
+  25% { transform: scale(0.9,1.1) translateY(-200px) rotate(360deg); } 
+  30% { transform: scale(0.9,1.1) translateY(-200px) rotate(360deg); }  */
+  /* 25% { transform: scale(0.9,1.1) translateY(-200px); } */
+  /* 25% { transform: translate(-300%, -300%) rotate(360deg); } */
+  /* 60% { transform: scale(0.9,1.1) translateY(-40) rotate(360deg); }
+  70% { transform: scale(1.1,0.9) translateY(0) rotate(360deg); }
+  89% { transform: scale(1,1) translateY(0) rotate(360deg); } */
+
+} 

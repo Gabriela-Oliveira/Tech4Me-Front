@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sort()</title>
+</head>
+<body>
+    <script>
+        // Ordem crescente
+        function sort1() {
+            const numeros = [140, 104, 14, 41, 10];
+            
+            numeros.sort((a, b) => a - b);
+
+            console.log(numeros);
+        }
+
+        sort1();
+
+        // Ordem decrescente
+        function sort2() {
+            const numeros = [140, 104, 14, 41, 10];
+            
+            numeros.sort((a, b) => b - a);
+
+            console.log(numeros);
+        }
+
+        sort2();
+    </script>
+</body>
+</html>

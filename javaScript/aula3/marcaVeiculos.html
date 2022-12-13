@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Marca de Veículos</title>
+</head>
+<body>
+    <script>
+        var listaCarros = [];
+
+        var carroFusca = {
+            nome: 'Volkswagen',
+            modelo: 'Fusca',
+            cor: 'Preto',
+            peso: 900,
+            placa: 'BRA2E19' 
+        }
+
+        var carroChevette = {
+            nome: 'Chevrolet',
+            modelo: 'Chevette',
+            cor: 'Preto',
+            peso: 900,
+            placa: 'BRA2E19' 
+        }
+
+        listaCarros.push(carroFusca);
+        listaCarros.push(carroChevette);
+
+        function nomeMontadora() {
+            // console.log(listaCarros);
+            
+            // for (let index = 0; index < listaCarros.length; index++) {
+            //    console.log("Nome da Montadora: " + listaCarros[index].nome);
+            // }
+
+            const nomeCarro = (carro) => console.log("Nome da Montadora: ", carro.nome);
+            listaCarros.forEach(nomeCarro);
+        }
+
+        nomeMontadora();
+    </script>
+</body>
+</html>

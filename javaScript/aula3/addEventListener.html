@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Event Listener</title>
+</head>
+<body>
+    <button id="btn">Clique aqui!</button>
+    <p id="olaMundo"></p>
+
+    <script>
+        const botao = document.getElementById("btn");
+        botao.addEventListener("click", clique);
+
+        function clique() {
+            // var teste = document.getElementById("olaMundo")
+
+            // teste.innerHTML = "Olá Mundo!"
+
+            document.getElementById("olaMundo").innerHTML = "Olá Mundo!"
+        }
+
+    </script>
+</body>
+</html>

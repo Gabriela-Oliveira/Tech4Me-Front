@@ -1,0 +1,16 @@
+.transition-timing-function {
+    width: 200px;
+    height: 100px;
+    background: rgb(40, 228, 102);
+    transition: width 2s;
+  }
+  
+  #div1 {transition-timing-function: linear;}
+  #div2 {transition-timing-function: ease;}
+  #div3 {transition-timing-function: ease-in;}
+  #div4 {transition-timing-function: ease-out;}
+  #div5 {transition-timing-function: ease-in-out;}
+  
+  .transition-timing-function:hover {
+    width: 300px;
+  }

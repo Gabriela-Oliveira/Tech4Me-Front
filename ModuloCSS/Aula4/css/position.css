@@ -1,0 +1,68 @@
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+}
+
+#parent1 {
+    position: static;
+    border: 1px solid blue;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+}
+
+#filho1 {
+    position: absolute;
+    border: 1px solid red;
+    width: 300px;
+    top: 70px;
+}
+
+#parent2 {
+    position: absolute;
+    border: 1px solid blue;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+}
+
+#filho2 {
+    position: absolute;
+    border: 1px solid red;
+    width: 300px;
+    top: 70px;
+}
+
+#parent3 {
+    position: relative;
+    border: 1px solid blue;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+}
+
+#filho3 {
+    position: absolute;
+    border: 1px solid red;
+    width: 300px;
+    top: 70px;
+}
+
+#parent4 {
+    position: fixed;
+    border: 1px solid blue;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+}
+
+#filho4 {
+    position: absolute;
+    border: 1px solid red;
+    width: 300px;
+    top: 70px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Marca de Veículos</title>
+</head>
+<body>
+    <script>
+        var listaCarros = [];
+
+        var carroFusca = {
+            nome: 'Volkswagen',
+            modelo: 'Fusca',
+            cor: 'Preto',
+            peso: 900,
+            placa: 'BRA2E19',
+            ano: 1992 
+        }
+
+        var carroChevette = {
+            nome: 'Chevrolet',
+            modelo: 'Chevette',
+            cor: 'Preto',
+            peso: 900,
+            placa: 'BRA2E19',
+            ano: 1885 
+        }
+
+        var carro3 = {
+            nome: 'Fiat',
+            modelo: 'Uno',
+            cor: 'cinza',
+            peso: 750,
+            placa: 'BRA2P25',
+            ano: 2021 
+        }
+
+        listaCarros.push(carroFusca);
+        listaCarros.push(carroChevette);
+        listaCarros.push(carro3);
+
+        function semiNovos() {
+            console.log(listaCarros);
+
+            const carros = (carro) => carro.ano >= 2019;
+            const carrosMenorTres = listaCarros.filter(carros);
+
+            console.log(carrosMenorTres);
+
+        }
+
+        semiNovos();
+    </script>
+</body>
+</html>

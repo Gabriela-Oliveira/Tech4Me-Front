@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        //Para transformar um objeto JS em JSON:
+        const carro = { 
+            modelo: "Brasília", 
+            ano: 1967 
+        };
+
+        const texto = JSON.stringify(carro);
+
+        console.log(carro);
+        console.log(texto);
+
+        //Para transformar um texto JSON em objeto JS:
+        const texto1 = '{ "modelo": "Brasília", "ano": 1967 }';
+        const carro1 = JSON.parse(texto1);
+
+        console.log(texto1);
+        console.log(carro1);
+        
+    </script>
+</body>
+</html>

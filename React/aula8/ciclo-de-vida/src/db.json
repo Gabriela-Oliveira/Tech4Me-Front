@@ -1,0 +1,35 @@
+{
+    "filmes": [
+      {
+        "nome": "Tudo em Todo O Lugar ao Mesmo Tempo",
+        "tipo": "Filme"
+      },
+      {
+        "nome": "O Telefone Preto"
+      },
+      {
+        "nome": "Licorice Pizza"
+      },
+      {
+        "nome": "O Telefone Preto"
+      },
+      {
+        "nome": "Top Gun: Maverick"
+      },
+      {
+        "nome": "Batman"
+      },
+      {
+        "nome": "Spencer"
+      },
+      {
+        "nome": "Pânico"
+      },
+      {
+        "nome": "Minions 2: A Origem de Gru"
+      },
+      {
+        "nome": "Doutor Estranho no Multiverso da Loucura"
+      }
+    ]
+  }

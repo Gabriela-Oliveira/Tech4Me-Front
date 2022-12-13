@@ -1,0 +1,71 @@
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.azul {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: azul;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+}
+
+@keyframes azul {
+    from {
+        /* top: 0px; */
+        height: 0px;
+    }
+    to {
+        /* top: 100px; */
+        height: 300px;
+    }
+}
+
+.amarela {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+    animation-name: amarela;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+}
+
+@keyframes amarela {
+    from {
+        /* top: 0px; */
+        height: 0px;
+    }
+    to {
+        /* top: 100px; */
+        height: 300px;
+    }
+}
+
+.vermelha {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: vermelha;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+}
+
+@keyframes vermelha {
+    from {
+        /* top: 0px; */
+        height: 0px;
+    }
+    to {
+        /* top: 100px; */
+        height: 300px;
+    }
+}

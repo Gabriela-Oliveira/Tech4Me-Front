@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SetTimeout</title>
+</head>
+<body>
+    <script>
+        // Assíncrona (CHAMA VÁRIAS VEZES)
+        console.log("1. Esse é o primeiro texto que você viu");
+
+        setTimeout(() => {
+            console.log("2. Só cheguei no console após 10 segundos");
+        }, 10000);
+
+        console.log("3. Essa instrução é a terceira, mas apareceu antes!");
+
+        // console.log("1. Esse é o primeiro texto que você viu");
+
+        // // Assíncrona (CHAMA VÁRIAS VEZES)
+        // setInterval(() => {
+        //     console.log("2. Só cheguei no console após 10 segundos");
+        // }, 10000);
+
+        // console.log("3. Essa instrução é a terceira, mas apareceu antes!");
+    </script>
+</body>
+</html>

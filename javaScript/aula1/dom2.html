@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 class="classe1" id="id1">TESTE 1</h2>
+    <p class="classe2" id="id2">TESTE 2</p>
+    <p class="classe3" id="id3">TESTE 3</p>
+    <div class="classe4" id="id4">TESTE 4</div>
+    <p class="classe3">TESTE 3</p>
+    <br>
+    
+    <button type="button" onclick="myFunction()">Cor</button>
+    
+    <script>
+        function myFunction() {
+            
+            document.getElementById("id1").style.color = "#ff0000";
+            document.getElementById("id2").style.color = "magenta";
+            document.getElementById("id3").style.color = "blue";
+            document.getElementById("id4").style.color = "lightblue";
+
+            const collection = document.getElementsByClassName("classe3");
+            collection[1].style.backgroundColor = "red";
+        }
+    </script>
+    
+    </body>
+</html>

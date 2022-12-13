@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Var Const Let</title>
+</head>
+<body>
+    <script>
+        function name2() {
+            var texto = "a";
+            var texto = "b";
+            console.log(texto);
+        }
+
+        // function name2() {
+        //     let texto = "a";
+        //     let texto = "b";
+        //     console.log(texto);
+        // }
+
+        // function name2() {
+        //     let texto = "a";
+        //     let texto1 = texto;
+        //     console.log(texto);
+        // }
+
+        let nome = "Maria";
+        
+        function name1() {
+            const numero = 4;
+
+            if (numero == 4) {
+                let nome = "Mario";
+
+                nome = "papai noel"
+                console.log(nome);
+            }
+            
+            console.log(nome);
+        }
+
+        console.log(nome);
+
+        // name2();
+        name1();
+    </script>
+</body>
+</html>

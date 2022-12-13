@@ -1,0 +1,18 @@
+.caixa {
+    height: 200px;
+    background-color: brown;
+    animation-name: aumentar;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes aumentar {
+    from {
+        width: 50px;
+    }
+    to {
+        width: 300px;
+    }
+}

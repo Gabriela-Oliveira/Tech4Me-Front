@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Crud de regitros dos carros</h2>
+
+    <div class="bloco">
+        <div class="field">
+            <label class="label">Id do carro</label>
+            <div class="control">
+              <input class="input" id="id" type="text">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Nome do carro</label>
+            <div class="control">
+              <input class="input" id="nome" type="text">
+            </div>
+        </div>
+          
+        <div class="field">
+            <label class="label">Modelo do carro</label>
+            <div class="control">
+                <input id="modelo" class="input" type="text">
+            </div>
+        </div>
+    
+        <div class="field">
+            <label class="label">Ano do carro</label>
+            <div class="control">
+                <input id="ano" class="input" type="text">
+            </div>
+        </div>
+    
+        <div class="field">
+            <label class="label">Cor do carro</label>
+            <div class="control">
+                <input id="cor" class="input" type="text">
+            </div>
+        </div>
+          
+        <div class="field is-grouped">
+            <div class="control">
+                <button id="enviar" class="button is-link">Cadastrar</button>
+                <button id="editar" class="button is-link">Editar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="field is-grouped bloco">
+        <div class="control">
+            <div class="field">
+                <label class="label">Id do carro a ser cancelado</label>
+                <div class="control">
+                    <input id="idCarro" class="input" type="text">
+                </div>
+            </div>
+            <button id="deleteCarros" class="button is-link">Cancelar</button>
+        </div>
+    </div>
+
+    <div style="margin: 20px;">
+        <div class="field is-grouped">
+            <div class="control">
+                <button id="getCarros" class="button is-link">Listar Registros</button>
+            </div>
+        </div>
+      
+        <div>
+            <ul id="listarCarros"></ul>
+        </div>    
+    </div>
+
+    <script type="module" src="/aula8/carros/novosCarrosApi.js"></script>
+</body>
+
+<style>
+    .bloco{
+        width: 18%;
+        padding: 5px;
+        margin: 20px;
+        border: 1px solid;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+</style>
+</html>

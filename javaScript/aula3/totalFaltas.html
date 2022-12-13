@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Total de Faltas</title>
+</head>
+<body>
+    <script>
+        class Alunos {
+            nome
+            modulo
+            presenca
+        }
+
+        var aluno1 = new Alunos();
+        aluno1.nome = "Albert Einstein";
+        aluno1.modulo = "Física";
+        aluno1.presenca = true;
+
+        var aluno2 = new Alunos();
+        aluno2.nome = "Tony Stark";
+        aluno2.modulo = "Robótica";
+        aluno2.presenca = true;
+
+        var aluno3 = new Alunos();
+        aluno3.nome = "Sherlock";
+        aluno3.modulo = "História";
+        aluno3.presenca = false;
+
+        var listaAlunos = [];
+
+        listaAlunos.push(aluno1);
+        listaAlunos.push(aluno2);
+        listaAlunos.push(aluno3);
+
+        function totalFaltas() {
+            console.log(listaAlunos);
+
+            const funcao = (item) => item.presenca === false;
+            const presetes = listaAlunos.filter(funcao);
+
+            console.log(presetes);
+            console.log(presetes.length + " Aluno faltante");
+        }
+
+        totalFaltas();
+    </script>
+</body>
+</html>

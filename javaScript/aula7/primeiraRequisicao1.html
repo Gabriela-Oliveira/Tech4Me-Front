@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="testeGet()">get</button>
+    <button onclick="testePost()">Post</button>
+    <button onclick="testePut()">put</button>
+    <button onclick="testeDelete()">delete</button>
+
+    <script>
+        const testePost = async () => {
+            let myJson = {}
+            fetch('http://localhost:3000/pessoa', {
+                method: 'POST',
+                body: JSON.stringify({
+                    nome: "pipi"
+            }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+            .then((response) => myJson = response.json())
+
+            // console.log(response);
+            console.log(myJson);
+        }
+
+        let myJson = []
+        const testeGet = async () => {
+            const response = await fetch('http://localhost:3000/pessoa');
+            myJson = await response.json();
+
+            // console.log(response);
+            console.log(myJson);
+        }
+
+        const testePut = async () => {
+            console.log(myJson[0].id);
+
+            fetch('http://localhost:3000/pessoa/' + myJson[0].id, {
+                method: 'PUT',
+                body: JSON.stringify({
+                    nome: "xixi"
+            }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+            .then((response) => myJson = response.json())
+
+            // console.log(response);
+            console.log(myJson);
+        }
+
+        const testeDelete = async () => {
+            for (let i = 0; i < myJson.length; i++) {
+                const response = await fetch('http://localhost:3000/pessoa/' + myJson[i].id, {
+                    method: 'DELETE',
+                });
+
+                const myJson1 = await response.json();
+
+                console.log(response);
+                console.log(myJson);
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

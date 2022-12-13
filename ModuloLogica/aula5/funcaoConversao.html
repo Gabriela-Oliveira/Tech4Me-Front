@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função de Conversão</title>
+</head>
+<body>
+    <button onclick="verResultado()">Clique Aqui!</button>
+
+    <script>
+        function verResultado() {
+            var numero = "142"
+            var numero1 = "142.68"
+
+            console.log("Valor: " + numero + " Tipo do var: " + typeof numero);
+            console.log("Valor: " + numero1 + " Tipo do var: " + typeof numero1);
+
+            var numeroParse = parseInt(numero) 
+            var numero1Parse = parseFloat(numero1)
+
+            console.log("Valor: " + numeroParse + " Tipo do var: " + typeof numeroParse);
+            console.log("Valor: " + numero1Parse + " Tipo do var: " + typeof numero1Parse);
+        }
+    </script>
+</body>
+</html>

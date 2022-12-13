@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter()</title>
+</head>
+<body>
+    <script>
+        function filter1() {
+            const frutas = ["🍌", "🍓", "🍍", "🍌", "🍉", "🍇"];
+
+            const fn = (item) => item === "🍌" || item === "🍇";
+
+            const bananas = frutas.filter(fn);
+            console.log(bananas);
+        }
+
+       filter1();
+    </script>
+</body>
+</html>

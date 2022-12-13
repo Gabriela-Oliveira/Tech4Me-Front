@@ -1,0 +1,22 @@
+1. Qual analogia podemos usar para entender Atributos? 
+R. Fazendo uma analogia com pessoas, atributos são características pessoais
+
+2. Qual o atributo obrigatório da tag <img>, e qual valor ele armazena?
+R. src. Define o endereço da imagem. Pode ser um arquivo no servidor, ou um endereço na internet.
+src é uma abreviação de source, traduzido como origem.
+
+3. O que é o auto fechamento de tags? Cite duas tags com auto fechamento.
+R. É quando um elemento/tag não possui conteúdo, então não é necessário incluir a tag de fechamento.
+ex. <br /> <hr />
+
+4. Qual a diferença entre as tags para fazer listas?
+R. Contêiner -> <ol> para lista ordenadas, <ul> para listas não ordenadas e <dl> para listas listas com conteúdo
+descritivo ou explicações
+	 Itens -> <li> para os itens da lista (<ol> / <ul>), 
+	 					<dt> para os termos e <dd> para as descrições da lista (dl)
+
+5. Qual nome nós usamos para entender a tag que recebe outras tags, em especial para listas e tabelas? 
+R. Contêiner
+
+6. O que são hyperlinks?
+R. São textos que, ao ser clicado, leva o usuário para outro documento HTML. O link pode conter endereços locais (no servidor) ou para outro site da Internet.

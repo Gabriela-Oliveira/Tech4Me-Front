@@ -1,0 +1,39 @@
+### Variables 
+@apiurl = https://gorest.co.in/public/v2
+# @apiurl = http://makeup-api.herokuapp.com/api/v1/products.json
+
+### GET users
+GET {{apiurl}}/users  HTTP/1.1
+
+# ### GET users
+# GET {{apiurl}} HTTP/1.1
+
+### POST users
+POST {{apiurl}}/users HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer 4cd158b67574e9edd151b370f8859840d874f22f787586452ccd35e61be70f96
+
+{
+   "name":"Tenaliaaaaa Ramakrishna",
+   "gender":"Male",
+   "email":"tenalia.ramakrishna@15ce.com",
+   "status":"Active"
+}
+
+### PUT users
+PUT {{apiurl}}/users/2985 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer 4cd158b67574e9edd151b370f8859840d874f22f787586452ccd35e61be70f96
+
+{
+   "name":"Tenali Ramakrishna",
+   "gender":"Male",
+   "email":"tenali.ramakrishna@10ce.com",
+   "status":"Active"
+}
+
+### DELETE users
+DELETE {{apiurl}}/users/3520 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer 4cd158b67574e9edd151b370f8859840d874f22f787586452ccd35e61be70f96
+

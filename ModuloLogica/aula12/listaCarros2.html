@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de carros</title>
+</head>
+<body>
+    <script>
+        var listaCarros = [];
+        var carro1 = {
+            nome: "Chevete",
+            cor: "Verde"
+        }
+
+        var carro2 = {
+            nome: "Gol",
+            cor: "Verde"
+        }
+
+        var carro3 = {
+            nome: "Impala",
+            cor: "Preto"
+        }
+
+        var carro4 = {
+            nome: "Impala1",
+            cor: "Preto"
+        }
+
+        var carro5 = {
+            nome: "Impala2",
+            cor: "Vermelho"
+        }
+
+        var carro6 = {
+            nome: "Impala3",
+            cor: "Preto"
+        }
+
+        function carros() {
+            var qtdCarrosVerdes = 0
+
+            listaCarros.push(carro1);
+            listaCarros.push(carro2);
+            listaCarros.push(carro3);
+
+            console.log(listaCarros);
+
+            for (let i = 0; i < listaCarros.length; i++) {
+                var cores = listaCarros[i].cor;
+
+                if (cores === "Verde") {
+                    qtdCarrosVerdes++;
+                }
+
+                console.log(cores);
+            }
+            console.log(qtdCarrosVerdes);
+        }
+
+        // carros();
+
+        function carros1() {
+            
+            listaCarros.push(carro1.cor);
+            listaCarros.push(carro2.cor);
+            listaCarros.push(carro3.cor);
+            listaCarros.push(carro4.cor);
+            listaCarros.push(carro5.cor);
+            listaCarros.push(carro6.cor);
+            
+            console.log(listaCarros);
+
+            var totais = {};
+
+            listaCarros.forEach(function(x) { totais[x] = (totais[x] || 0) + 1; });
+
+            console.log(totais);
+        }
+
+        carros1();
+    </script>
+</body>
+</html>

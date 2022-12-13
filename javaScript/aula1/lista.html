@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang=“pt-br”>
+    <head>
+		<title>Curso de Javascript</title>
+		<meta charset=“UTF-8”>
+	</head>
+    <body>
+		<input type="text" value="" id="txtVeiculo">
+		<button onclick="addLI(document.getElementById('txtVeiculo').value)">Adicionar</button>
+	
+		<ul id="transporte">
+			<li>Avião</li>
+			<li>Carro</li>
+			<li>Moto</li>
+		</ul>
+
+        <script>
+			
+			function addLI(veiculo){
+				if(veiculo == ""){
+					alert("Informe um veículo");
+					document.getElementById("txtVeiculo").focus();
+				}else{
+					var lista=document.getElementById("transporte");
+					var novoItem=document.createElement("li");
+					novoItem.textContent=veiculo;
+					lista.appendChild(novoItem);
+				}
+			}
+		
+		</script>
+	</body>
+</html>

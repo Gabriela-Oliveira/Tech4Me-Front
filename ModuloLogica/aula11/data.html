@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data</title>
+</head>
+<body>
+    <script>
+        function dataHoje() {
+            var hoje = new Date();
+
+            console.log(hoje);
+
+            console.log(hoje.toISOString());
+            console.log(hoje.toLocaleString());
+            console.log(hoje.toLocaleDateString());
+            console.log(hoje.toLocaleTimeString());
+        
+            var dataFormatada = {
+                mm: hoje.getMonth() + 1,
+                dd: hoje.getDate(),
+                aaaa: hoje.getFullYear() 
+            }
+
+            var mesLongo = hoje.toLocaleString("pt-br", { month: "long"});
+            var mesCurto = hoje.toLocaleString("pt-br", { month: "short"});
+
+            console.log(dataFormatada);
+            console.log('////////////////////////////');
+            console.log(mesLongo);
+            console.log(mesCurto);
+
+            console.log("Teresópolis, " + dataFormatada.dd + " de " + mesLongo + " de " + dataFormatada.aaaa);
+        }
+
+        dataHoje();
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções de texto</title>
+</head>
+<body>
+    <button onclick="maiusculas()">maiusculas</button>
+    <button onclick="minusculas()">minuscula</button>
+    <button onclick="partes()">partes</button>
+    <button onclick="posicao()">posicao</button>
+
+    <script>
+        function maiusculas() {
+            var texto = "bora codar?"
+            var maiusculas = texto.toUpperCase()
+
+            console.log(texto);
+            console.log(maiusculas);
+        }
+
+        function minusculas() {
+            var texto = "BORA CODAR?"
+            var minuscula = texto.toLowerCase()
+
+            console.log(texto);
+            console.log(minuscula);
+        }
+
+        function partes() {
+            var texto = "BORA CODAR?"
+            var partes = texto.substring(5, 10)
+
+            console.log(texto);
+            console.log(partes);
+        }
+
+        function posicao() {
+            var texto = "BORA CODAR?"
+            var posicao = texto.indexOf("CODAR")
+
+            console.log(texto);
+            console.log(posicao);
+        }
+    </script>
+</body>
+</html>

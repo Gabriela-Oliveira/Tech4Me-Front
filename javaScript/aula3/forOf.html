@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>For Of</title>
+</head>
+<body>
+    <script>
+        function forOf() {
+            const lista = ["🚗", "🚙", "🚓"];
+
+            for (const carro of lista) {
+                console.log(carro);
+            }
+        }
+
+        // forOf();
+
+        function forEach1() {
+            const frutas = ["🍑", "🍓", "🍍", "🍉", "🍇"];
+            const fn = (item) => console.log("Fruta:", item);
+            
+            frutas.forEach(fn);
+        }
+
+        forEach1();
+    </script>
+</body>
+</html>

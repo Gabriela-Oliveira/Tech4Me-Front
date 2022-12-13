@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lista de Doces</title>
+</head>
+<body>
+    <script>
+        var doces = ["pirulito", "bala"];
+
+        function listaDoces(doces) {
+            
+            var doces1 = doces;
+            
+            doces1.push('chiclete');
+            
+            console.log(doces);
+            console.log(doces1);
+
+            doces[2] = "Nutela";
+
+            console.log(doces);
+            console.log(doces1);
+        }
+
+        listaDoces(doces);
+    </script>
+</body>
+</html>

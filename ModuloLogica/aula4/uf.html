@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UF</title>
+</head>
+<body>
+    <button onclick="estado()">Clique e defina a UF.</button>
+
+    <script>
+        function estado() {
+            var uf = prompt("Qual é a UF do estado de onde você mora?")
+
+            switch (uf.toUpperCase()) {
+                case "RJ": 
+                    alert("Você mora em Rio de Janeiro!")
+                    break;
+                case "MG":
+                    alert("Você mora em Minas Gerais!")
+                    break;
+                case "ES":
+                    alert("Você mora em Espírito Santo!")
+                    break;
+                case "SP":
+                    alert("Você mora em São Paulo!")
+                    break;
+                default: alert("Você não mora em nenhum estado da região sudeste do Brasil!")
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

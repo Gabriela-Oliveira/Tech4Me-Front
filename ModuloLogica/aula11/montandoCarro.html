@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carros Objeto</title>
+</head>
+<body>
+    <script>
+        function carro() {
+            var carroFusca = {
+                nome: "Volkswagen",
+                modelo: "Fusca",
+                ano: 1994,
+                cor: 'vermelho'
+            }
+
+            var carroChevette = {
+                nome: "Chevrolet",
+                modelo: "Chevette",
+                ano: 1989,
+                cor: 'preto'
+            }
+
+            console.log(carroFusca);
+            console.log(carroChevette);
+
+            var garagem = [carroFusca];
+
+            garagem.push(carroChevette);
+
+            console.log(garagem);
+
+            console.log(carroChevette.ano);
+            console.log(carroFusca.ano);
+        }
+
+        carro();    
+    </script>
+</body>
+</html>

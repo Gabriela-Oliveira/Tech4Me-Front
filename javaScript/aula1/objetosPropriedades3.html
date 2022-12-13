@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Elemento Object</h1>
+    <h2>nodeName propriedade</h2>
+
+    <p>O nome do nó(nodeName) é: </p>
+    <p id="demo">Este é o conteúdo da tag.</p>
+
+    <p id="demo1"></p>
+
+    <button id="myBtn">Mengão campeão</button>
+
+    <script>
+        let text2 = document.getElementById("myBtn").innerText;
+        let text3 = document.getElementById("demo1").innerHTML = text2; 
+        console.log(text2);
+        console.log(text3);
+
+    </script>
+</body>
+</html>
